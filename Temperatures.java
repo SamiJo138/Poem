@@ -35,8 +35,9 @@ public class Temperatures
         timeAvgVal[timeOfDay] += temps[weekday][timeOfDay];
       }
       System.out.println(daysOfWeek[weekday] + ": "+ (sum / temps[weekday].length));
+      sum=0;
     }
-    sum=0;
+   
     
   for (int time=0; time<timeAvgVal.length; time ++)
   {
